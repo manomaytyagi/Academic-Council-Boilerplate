@@ -1,0 +1,126 @@
+.events-container {
+  width: 100%;
+}
+
+.events-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-dark) 0%,
+    var(--primary-teal) 100%
+  );
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.events-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  color: var(--white);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 12px 28px rgba(6, 182, 212, 0.12);
+  transform: translateY(-6px);
+}
+
+.event-category {
+  display: inline-block;
+  background-color: var(--primary-teal);
+  color: var(--white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.event-title {
+  color: var(--primary-dark);
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.event-date,
+.event-location {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.date-icon,
+.location-icon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.event-description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.event-btn {
+  background-color: var(--accent-cyan);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.event-btn:hover {
+  background-color: var(--primary-teal);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .events-header {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .events-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+}

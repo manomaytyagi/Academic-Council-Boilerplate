@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+  --primary-dark: #0b1e4b;
+  --primary-teal: #143a8b;
+  --accent-cyan: #f97316;
+  --light-bg: #f3f6fb;
+  --text-dark: #0b1220;
+  --text-light: #445066;
+  --border-color: #d6e0f2;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+::selection {
+  background: rgba(6, 182, 212, 0.25);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+/* Global Button Styles */
+button,
+a.btn,
+a.buttonlike {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(6, 182, 212, 0.45);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Common Sections */
+section {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
